@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="15dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#e9e9e9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/account_settings"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/dummylay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/background_update" >
+
+                <TextView
+                    android:id="@+id/username_settings_page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="5dp"
+                    android:capitalize="sentences"
+                    android:ellipsize="marquee"
+                    android:inputType="textCapWords"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="sf"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <com.gpsmobitrack.gpstracker.CustomizedView.MySwitch
+                    android:id="@+id/backgound_update_toggle"
+                    style="@style/mySwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/username_settings_page"
+                    android:layout_marginTop="10dp"
+                    mySwitch:textOff="OFF"
+                    mySwitch:textOn="ON"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumb="@drawable/switch_thumb"
+                    mySwitch:tracknew="@drawable/customswitchselector" />
+
+                <com.gpsmobitrack.gpstracker.CustomizedView.MySwitch
+                    android:id="@+id/profile_public_toggle"
+                    style="@style/mySwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/backgound_update_toggle"
+                    android:layout_marginTop="13dp"
+                    mySwitch:textOff="OFF"
+                    mySwitch:textOn="ON"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumb="@drawable/switch_thumb"
+                    mySwitch:tracknew="@drawable/customswitchselector" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/background_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_txt"
+                android:layout_below="@+id/name_txt"
+                android:layout_marginTop="18dp"
+                android:text="@string/background_updates"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/privacy_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/background_update"
+                android:layout_below="@+id/background_update"
+                android:layout_marginTop="20dp"
+                android:text="@string/public_profile"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/gps_info_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_name"
+            android:layout_marginTop="10dp"
+            android:background="#e9e9e9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/gps_information"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative_update_freq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_info_txt"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/update_freq_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/update_frequency"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <com.gpsmobitrack.gpstracker.Utils.SpinnerReselect
+                android:id="@+id/update_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/spinner_selector"
+                android:paddingRight="20dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/deactivate_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_update_freq"
+            android:layout_marginTop="10dp"
+            android:background="#e9e9e9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/de_activate_account"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/update_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deactivate_txt"
+            android:layout_marginTop="10dp"
+            android:background="#e9e9e9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/update"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/rating_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_txt"
+            android:layout_marginTop="10dp"
+            android:background="#e9e9e9"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/rating"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+</ScrollView>

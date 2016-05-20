@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gps Tracker Pro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="forget_password">Forget Password </string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_e_mail_id">Enter E-mail ID</string>
+    <string name="gps_tracker">GPS Tracker</string>
+    <string name="_sign_up"><u>Sign Up</u></string>
+    <string name="name">Name</string>
+    <string name="background_updates">Background Updates</string>
+    <string name="public_profile">Make your location public</string>
+    <string name="update_frequency">Update Frequency</string>
+    <string name="de_activate_account">De-Activate Account</string>
+    <string name="update">Update App</string>
+    <string name="rating">Rate the App</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="email">Email</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_apos_t_have_an_account_yet_">"Don't have an account yet? "</string>
+    <string name="emptystring">" "</string>
+    <string name="_">:</string>
+    <string name="details">Details</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="history">History</string>
+    <string name="relationship">Relationship</string>
+    <string name="location">Location</string>
+    <string name="add_contacts">Add Contacts</string>
+    <string name="unselect_all">Unselect All</string>
+    <string name="select_all">Select All</string>
+    <string name="done">Done</string>
+    <string name="current_location">Current Location</string>
+    <string name="firstname">"Firstname "</string>
+    <string name="lastname">"Lastname "</string>
+    <string name="phoneno">"Phone No "</string>
+    <string name="e_mail_id">"E-mail ID "</string>
+    <string name="gender">"Gender "</string>
+    <string name="state">"State "</string>
+    <string name="country">"Country "</string>
+    <string name="upload_img">Upload Img</string>
+    <string name="select_image">Select Image</string>
+    <string name="change_password">Change Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dob">"D.O.B "</string>
+    <string name="enter_e_mail_or_phone_number">Enter E-mail or Phone Number</string>
+    <string name="location_">"Location : "</string>
+    <string name="relationship_">"RelationShip : "</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="gps_information">GPS Information</string>
+    <string name="remove">Remove</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="title_activity_">Activity</string>
+
+    <string name="helpcenter">Help Center</string>
+    <string name="setp1">Step 1:</string>
+    <string name="setp2">Step 2:</string>
+    <string name="setp3">Step 3:</string>
+    <string name="setp4">Step 4:</string>
+    <string name="setp5">Step 5:</string>
+  
+    
+    <string name="contsetp1">Register -> Login</string>
+    <string name="contsetp2">Invite your friends using Invite option.</string>
+    
+    <string name="contsetp3">After they accept your request, you can able to track them using "Start" and "End" options.</string>
+    <string name="contsetp3note">Note:</string>
+    <string name="contsetp3notecont">It’s about only one time acceptance.</string>
+    
+    <string name="contsetp4">Using "History" option, you can able to check their past 10 day’s location history.</string>
+    <string name="contsetp5">Tracking time interval can be set from "Settings" menu. Depends on the selected time interval, you can able to get the location update in their Google map. (1min, 2min, 3min, 5mins---)
+</string>
+    
+        <string name="app_id">458749894285375</string>
+</resources>

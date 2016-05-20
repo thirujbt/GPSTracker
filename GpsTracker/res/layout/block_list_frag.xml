@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ListView
+        android:id="@+id/block_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+		android:layout_above="@+id/ll_blocklist_bottom_btns"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_blocklist_bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_btn_blockpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/selectall"
+            android:padding="10dp"
+            android:text="@string/select_all"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/unselect_btn_blockpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/unselectall"
+            android:padding="10dp"
+            android:text="@string/unselect_all"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/unblock_btn_blockpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/remove"
+            android:padding="10dp"
+            android:text="@string/unblock"
+            android:textColor="@android:color/white" />
+      
+    </LinearLayout>
+
+</RelativeLayout>

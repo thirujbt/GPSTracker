@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="120dp"
+    android:background="@drawable/bgdialog"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alert_title_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="#656565"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_below="@+id/alert_title_fb"
+        android:layout_marginTop="2dp"
+        android:background="#01C2D4" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_title_fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/alert_edit_txt_fname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_fullname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter First Name"
+            android:imeOptions="actionDone"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_lname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_fname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Last Name"
+            android:imeOptions="actionNext"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_emailid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_lname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Your EmailID"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_emailid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Your gender"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_dob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_gender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Date of Birth"
+            android:imeOptions="actionNext"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_phno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_dob"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Phone Number"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_phno"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_pwd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Your State"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/alert_edit_txt_country"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alert_edit_txt_state"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_text_edit"
+            android:hint="Enter Your Country"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alert_password_rr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+         <Button
+            android:id="@+id/alert_cancel_btn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/cancel_btn_alert" /> 
+
+        <Button
+            android:id="@+id/alert_ok_btn_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/alert_cancel_btn_fb"
+            android:background="@drawable/ok_btn_alert"
+            android:imeOptions="actionDone" />
+    </RelativeLayout>
+
+</RelativeLayout>

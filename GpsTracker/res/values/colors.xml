@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="drak_grey">#303030</color>
+    <color name="tab_off">#5F1087</color>
+    <color name="tab_on">#9933CC</color>
+    <color name="profile_password_color">#337384</color>
+    <color name="dialog_bg">#DEDEDE</color>
+    <color name="selectall">#2ecc71</color>
+    <color name="unselectall">#0099cc</color>
+    <color name="remove">#cc0000</color>
+    <color name="block">#e67e22</color>
+    
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="white">#ffffff</color>
+    
+    <!-- Chat Imp Colors -->
+    	<color name="textColor">#FFF</color>
+	<color name="textFieldColor">#000</color>
+	<color name="textShadow">#FFF</color>
+	<color name="listViewBg">#DADFEE</color>
+
+	<color name="sendLightColor">#8897BF</color>
+	<color name="sendMeduimColor">#5D6CA5</color>
+	<color name="sendDarkColor">#515F9F</color>
+
+	<color name="barDarkColor">#CECECE</color>
+	<color name="barMeduimColor">#DFDEE0</color>
+	<color name="barLightColor">#F2F2F2</color>
+	
+	
+	  <color name="invite_friends_header_text">#2980B9</color>
+    <color name="invite_friends_close_text">#AAAAAA</color>
+</resources>

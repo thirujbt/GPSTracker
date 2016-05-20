@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/drag_drop_icon"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <ImageView
+        android:id="@+id/tracklist_user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/drag_handle" />
+
+    <TextView
+        android:id="@+id/txt_name_trackpage_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_email_trackpage_list_item"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/track_list_checkbox"
+        android:layout_toRightOf="@+id/tracklist_user_img"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="@string/name"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/txt_email_trackpage_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/track_list_checkbox"
+        android:layout_toRightOf="@+id/tracklist_user_img"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:text="@string/email"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:id="@+id/track_list_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:button="@drawable/checkbox_button" />
+
+</RelativeLayout>

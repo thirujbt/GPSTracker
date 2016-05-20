@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E0303" >
+
+    <ListView
+            android:id="@+id/req_send_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollingCache="false"
+            android:background="@android:color/white"
+            android:layout_above="@+id/req_send_bottom_btns"
+            android:visibility="visible" >
+        </ListView>
+        
+     <RelativeLayout
+        android:id="@+id/req_send_bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        
+        <Button 
+            android:id="@+id/select_btn_reqsend_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selectall_btn"
+            />
+        <Button 
+            android:id="@+id/unselect_btn_reqsend_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/select_btn_reqsend_page"
+            android:background="@drawable/unselectall_btn"
+            />
+        <Button 
+            android:id="@+id/remove_btn_reqsend_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/unselect_btn_reqsend_page"
+            android:background="@drawable/remove_btn"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

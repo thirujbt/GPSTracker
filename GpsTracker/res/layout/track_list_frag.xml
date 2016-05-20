@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFE4F7" >
+
+    <com.gpsmobitrack.gpstracker.DragSortLibs.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res/com.gpstracker.pro"
+        android:id="@+id/drop_list_track_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_trackpage_bottom_btns"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="1px"
+        dslv:click_remove_id="@id/click_remove"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3" />
+    
+   <LinearLayout
+        android:id="@+id/ll_trackpage_bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_btn_trackpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@color/selectall"
+            android:text="@string/select_all" />
+<!--             android:background="@drawable/track_list_selector" -->
+
+        <Button
+            android:id="@+id/unselect_btn_trackpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@color/unselectall"
+            android:text="@string/unselect_all" />
+<!--             android:background="@drawable/track_list_selector" -->
+
+        <Button
+            android:id="@+id/remove_btn_trackpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/remove"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="@string/remove" />
+        <Button
+            android:id="@+id/block_btn_trackpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/block"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:text="@string/block" />
+        <!-- android:background="@drawable/track_list_selector" -->
+    </LinearLayout>
+
+</RelativeLayout>

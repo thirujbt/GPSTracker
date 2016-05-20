@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlay_req_receive_list_adap"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/user_name_req_receive_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/linlay"
+        android:ellipsize="end"
+        android:lines="1"
+                android:gravity="left"
+        
+        android:singleLine="true"
+        android:text="@string/name"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/user_email_req_receive_page"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_below="@+id/user_name_req_receive_page"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/linlay"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:text="@string/email"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/user_block_req_receive_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/req_btn_blk" />
+
+        <Button
+            android:id="@+id/user_reject_req_receive_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/req_btn_rjt" />
+
+        <Button
+            android:id="@+id/user_accept_req_receive_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/req_btn_acpt" />
+    </LinearLayout>
+
+</RelativeLayout>

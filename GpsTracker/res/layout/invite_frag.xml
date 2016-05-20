@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8E0303" >
+
+    <ListView
+        android:id="@+id/invite_email_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/invite_bottom_btns"
+        android:background="@android:color/white"
+        android:scrollingCache="false"
+        android:visibility="visible" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/invite_bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/add_btn_invite_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/invite_add_selector"
+             />
+
+        <Button
+            android:id="@+id/contacts_btn_invite_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/invite_contact_selector"
+            />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/edit_btn_invite_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/invite_edit_selector"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/remove_btn_invite_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/invite_remove_selector"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/invite_btn_invite_page"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/invite_invite_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

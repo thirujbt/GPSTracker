@@ -1,0 +1,86 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Progress Dialog Theme -->
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+    
+    <style name="mySwitchStyle">
+        <item name="tracknew">@drawable/switch_track_green</item>
+        <item name="thumb">@drawable/background_fenced</item>  
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPaddingnew">6dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidthnew">54dp</item>
+        <item name="switchMinHeight">24dp</item>
+        <item name="switchPaddingnew">6dp</item>
+    </style>
+    <style name="SwitchText">
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingBottom">8dp</item>
+    <item name="android:textColor">#FFeeFFee</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:shadowColor">#BB000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+  
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">16sp</item>
+        <item name="textStyle">normal</item>
+    </style>
+<style name="toggle_text" parent="@android:style/TextAppearance.Small">
+    <item name="android:textColor">@drawable/toggle_text</item>
+</style>
+    
+</resources>
